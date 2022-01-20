@@ -9,10 +9,7 @@ import { Component } from "@angular/core";
 export class AppComponent {
   name: string = 'Anthony'
   
-  handleClick() {
-    this.name = 'Minnaugh';
-  }
-  handleChange(value: string) {
-    this.name = value;
+  handleClick(value: string) {
+    console.log(value);
   }
 }
