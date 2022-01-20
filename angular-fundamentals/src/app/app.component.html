@@ -1,1 +1,5 @@
-<div class="app">{{ title }}</div>
+<div class="app">
+	<button (click)="handleClick(username.value)">Get Value</button>
+	<input type="text" #username />
+	<div>{{ name }}</div>
+</div>
