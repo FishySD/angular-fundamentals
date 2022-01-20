@@ -1,5 +1,8 @@
 <div class="app">
-	<button (click)="handleClick(username.value)">Get Value</button>
-	<input type="text" #username />
-	<div>{{ name }}</div>
+	<h3>Airline Passengers</h3>
+	<ul>
+		<li *ngFor="let passenger of passengers; let i = index">
+			{{ i }}: {{ passenger.fullname }}
+		</li>
+	</ul>
 </div>
