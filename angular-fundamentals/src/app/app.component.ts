@@ -7,11 +7,15 @@ import { Component } from "@angular/core";
 })
 
 export class AppComponent {
-  title: string;
-  isHappy: boolean = false;
-  numberOne: number = 1;
-  numberTwo: number = 2;
-  constructor() {
-    this.title = 'Ultimate Angular'
+  name: string = 'Anthony'
+  
+  handleClick() {
+    this.name = 'Minnaugh';
+  }
+  handleInput(event: any) {
+    this.name = event.target.value;
+  }
+  handleBlur(event: any) {
+    this.name = event.target.value;
   }
 }
