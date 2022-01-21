@@ -13,7 +13,6 @@ export class PassengarDashboardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('ngOnInit');
     this.passengers =  [{
       id: 1,
       fullname: 'Stephen',
