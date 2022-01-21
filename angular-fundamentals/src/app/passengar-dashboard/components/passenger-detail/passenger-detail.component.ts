@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+import { Passenger } from '../../models/passenger.interface';
 
 @Component({
   selector: 'app-passenger-detail',
@@ -7,8 +9,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PassengerDetailComponent implements OnInit {
 
+  @Input()
+  detail!: Passenger;
+  
   constructor() { }
-
+  
   ngOnInit(): void {
   }
 
